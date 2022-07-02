@@ -10,8 +10,8 @@ alicemod_decision_prospect = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 250
-			energy = 500
+			unity = 2500
+			energy = 5000
 		}
 	}
 
@@ -54,7 +54,7 @@ alicemod_decision_prospect = {
 		weight = 1
 		modifier = {
 			factor = 0
-			num_pops < 20
+			num_pops < 40
 		}
 	}
 }
@@ -96,7 +96,7 @@ alicemod_decision_expand_planetary_sea = {
 				success_text = requires_max_3_times_ice_dumping
 				check_variable = {
 					which = ice_dumping_happened
-					value < 175
+					value > 2
 				}
 			}
 		}
@@ -111,7 +111,7 @@ alicemod_decision_expand_planetary_sea = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			influence = 150
 			energy = 1000
 		}
 	}
