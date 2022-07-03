@@ -87,25 +87,6 @@ alicemod_decision_expand_planetary_sea = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				is_variable_set = ice_dumping_happened
-			}
-			custom_tooltip = {
-				fail_text = requires_max_3_times_fail_simple
-				success_text = requires_max_3_times_ice_dumping
-				check_variable = {
-					which = ice_dumping_happened
-					value > 2
-				}
-			}
-		}
-		else = {
-			custom_tooltip = {
-				text = requires_max_3_times_pass_simple
-				always = yes
-			}
-		}
 	}
 
 	resources = {
