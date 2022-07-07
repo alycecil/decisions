@@ -14,6 +14,18 @@ decision_build_world_shell = {
 	}
 
 	potential = {
+		exists = owner
+		is_artificial = no
+		NOR = {
+            has_planet_flag = ruined_orbital_ring_planet
+            is_planet_class = pc_ringworld_habitable
+            is_planet_class = pc_ringworld_habitable_damaged
+            is_planet_class = pc_ringworld_tech
+            is_planet_class = pc_ringworld_tech_damaged
+            is_planet_class = pc_ringworld_seam
+            is_planet_class = pc_ringworld_seam_damaged
+            is_planet_class = pc_habitat
+        }
 	}
 
 	effect = {
